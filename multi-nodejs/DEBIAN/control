@@ -1,0 +1,20 @@
+Package: multi-nodejs
+Section: misc
+Priority: optional
+Version: 1.0
+Maintainer: Simon Vetter <simon.vetter@rackspace.com>
+Depends: libc6 (>= 2.9), libgcc1 (>= 1:4.1.1), libssl0.9.8 (>= 0.9.8k-1), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Architecture: amd64
+Description: Node.js event-based server-side javascript engine - multiversion package
+ Node.js is similar in design to and influenced by systems like
+ Ruby's Event Machine or Python's Twisted.
+ .
+ It takes the event model a bit further - it presents the event
+ loop as a language construct instead of as a library.
+ .
+ Node.js is bundled with several useful libraries to handle server tasks :
+ System, Events, Standard I/O, Modules, Timers, Child Processes, POSIX,
+ HTTP, Multipart Parsing, TCP, DNS, Assert, Path, URL, Query Strings.
+ .
+ This package provides multiple major versions in an effort to help
+ developers test and deploy their applications on multiple nodejs versions.

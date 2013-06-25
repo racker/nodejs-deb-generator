@@ -1,0 +1,17 @@
+Nodejs-deb-generator
+-----------------------------------------------------------------------------------
+Simple script to build and package any number of nodejs versions.
+
+Usage:
+1. Edit node_versions.list and add links to the desired nodejs tarball archive.
+   Every line should be in the form http://nodejs.mirror/path/to/tarball.tar.gz|sha1ofthetarball
+2. do sh scripts/build.sh
+3. go get a cup of coffee...
+4. if all went well, the script should have generated multi-nodejs.deb containing everything.
+6. install the package with dpkg -i multi-nodejs.deb or the method of your choice.
+7. Profit. everything is installed in /usr/local/node-vx.x.x and binaries are symlinked
+   to /usr/bin/node-vx.x.x-binary_name. /usr/bin/node is left intact.
+
+Dependencies:
+- make, build-essential, dpkg
+- regular nodejs dependencies
